@@ -1,0 +1,425 @@
+:root {
+    --services-color:#F7F7F7;
+}
+
+html {
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    scroll-padding-top: 73px;
+}
+
+body {
+    top: 0;
+    margin: 0;
+    padding: 0;
+    /* color: white; */
+    font-family: 'Roboto', sans-serif;
+    font-family: poppins;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url('../imgs/bg.jpg'); */
+    /* height: 100000px; */
+    /* background-image: url('../imgs/bg.jpg'); */
+
+    height: 100vh;
+    /* overflow: hidden; */
+
+}
+/* ===========================navbar========================================================= */
+/*navbar*/
+.navbar {
+
+    top: 0;
+    /* color: white; */
+    padding: 1rem 2rem;
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+
+    width: 100%;
+    z-index: 1000;
+    /* overflow: hidden; */
+
+
+}
+
+.navbar .nav-item .home {
+
+
+    border-bottom: 0.5px solid white;
+
+}
+
+/* section.........home===================================================================== */
+.developer {
+
+
+    /* padding: 2rem; */
+    /* margin-top: 100px; */
+
+    /* margin-top: 200px; */
+    /* min-height: calc(100vh - 92px); */
+    text-align: center;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../imgs/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    /* min-height: calc(100vh - 80px); */
+
+
+
+    h1 {
+        font-size: 50px;
+        margin-bottom: 1rem;
+
+    }
+
+    p {
+        text-align: center;
+
+        font-size: 44px;
+        margin-bottom: 1rem;
+        font-family: Montserrat;
+
+
+    }
+
+
+}
+
+.happy {
+    /* border-right: 3px solid white; */
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+
+
+}
+
+
+
+.happy::after {
+    content: '';
+    /* display: inline-block; */
+
+    height: 100%;
+    /* border-right: 1px solid white; */
+
+    /* background-color: black; */
+    /* margin: 5rem auto; */
+    position: absolute;
+    animation: move 5s 1s infinite alternate;
+}
+
+
+@keyframes move {
+    0% {
+        content: '| ';
+        animation-delay: 1s;
+
+
+
+    }
+
+    10% {
+        content: 'DEVELOPER |';
+        animation-delay: 1s;
+
+    }
+
+    15% {
+        content: '| ';
+        animation-delay: 1s;
+
+
+    }
+
+    20% {
+        content: 'DESIGNER |';
+
+    }
+
+    25% {
+        content: '| ';
+
+    }
+
+    30% {
+        content: 'LARY DANIELS |';
+
+    }
+
+    35% {
+        content: '| ';
+
+    }
+
+    40% {
+        content: '  |';
+
+    }
+
+    45% {
+        content: '| ';
+
+    }
+
+    50% {
+        content: '| ';
+
+    }
+
+    55% {
+        content: '| ';
+
+    }
+
+    60% {
+        content: 'DEVELOPER |';
+
+    }
+
+    65% {
+        content: '| ';
+
+    }
+
+    70% {
+        content: 'DESIGNER |';
+
+    }
+
+    75% {
+        content: '| ';
+
+    }
+
+    80% {
+        content: 'LARY DANIELS |';
+
+    }
+
+    85% {
+        content: '| ';
+
+    }
+
+    90% {
+        content: '  |';
+
+    }
+
+    95% {
+        content: '| ';
+
+    }
+
+    100% {
+        content: '  |';
+
+    }
+}
+
+
+.icons {
+    justify-content: center;
+}
+
+/*  section--------------About =======================================================*/
+.img-spotty {
+
+    width: 400px;
+
+    /* background-color: aqua; */
+    height: 500px;
+    position: absolute;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.422)), url('../imgs/dots.png');
+
+    background-size: contain;
+    background-position: center;
+    z-index: -1;
+
+
+}
+
+.img-hero {
+    height: 450px;
+    width: 400px;
+    position: relative;
+    bottom: 10px;
+    left: 20%;
+}
+
+.btn-contact {
+    border: 1px solid black;
+}
+
+
+/* section ----------------services =====================================================*/
+.spotty{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.422)), url('../imgs/dots.png');
+    background-size: contain;
+    background-position: center;
+   margin-left: 40%;
+    height: 100px;
+    width: fit-content;
+   
+    border:1 px solid black;
+    
+}
+
+.services{
+ background-color: var(--services-color);
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.circle-icon{
+    margin-block: 10px;
+    background-color:white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    
+    margin-left: 35%;
+    position: relative;
+}
+.circle-icon i{
+    color: black;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+/* .services .icon{
+    
+    position: absolute;
+    bottom: 60%;
+    right:  50%;
+    margin-left: 45%;
+} */
+
+
+.ux:hover{
+    /* background-color: #FFD700; */
+    .circle-icon{
+        background-color:black;
+    }
+    
+    
+}
+
+ .ux:hover{
+     i {
+        color: white;
+    
+}
+}
+
+ /* ...............portfolio.................. */
+.card .layer{
+    background-color:transparent;
+    width: 280px;
+    height: 390px;
+    position: relative;
+    z-index: 1;
+   padding-block: 10px 10px;
+   box-sizing: border-box;
+    /* margin: 10px; */
+    /* border-radius: 10px; */
+    transition: 0.5s;
+    
+}
+.card .layer:hover{
+    width: 270px;
+    height: 380px;
+    background-color: rgba(255, 255, 255, 0.9);
+    overflow: hidden;
+    box-sizing: border-box;
+    
+    
+ 
+
+}
+ .card-img-top:hover{
+   
+   
+    background-color: var(services-color);
+ }
+
+ 
+.card .layer-top{
+    
+    width: 280px;
+    height: 390px;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    /* top: 0; */
+    box-sizing: border-box;
+}
+
+
+/* testiman============================= */
+
+.test-man .man-img  img{
+    justify-content: center;
+    align-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+/* ================================== */
+
+
+/* ============================contact--us---================================= */
+
+.contact-us{
+    background-color: white;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.contact-icon{
+    background-color:var(--services-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    
+    margin-left: 35%;
+    position: relative;
+}
+.contact-icon i{
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.card-body:hover{
+    
+    .contact-icon {background-color: black};
+    .contact-icon i{color: white};
+
+}
+/* /////////////// remove the border */
+.card{
+    --bs-card-border-width: 0;  
+}
+
+
+#exampleInputEmail1{ 
+    background-color: var(--services-color);
+    /* border: 1px solid black;
+    border-radius: 0; */
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
